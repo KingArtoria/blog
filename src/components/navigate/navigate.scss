@@ -1,0 +1,32 @@
+.navigate {
+  padding: 0.125rem 0.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  transition: all 0.5s;
+  height: 0.75rem;
+  background: transparent;
+  transform: translateY(0px);
+  color: #eee;
+  .navigate_1 {
+    font-size: 0.225rem;
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+.navigate1 {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0.0625rem 0.075rem -0.0625rem rgb(133 133 133 / 60%);
+  transform: translateY(0);
+  color: #4c4948;
+}
+.navigate2 {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0.0625rem 0.075rem -0.0625rem rgb(133 133 133 / 60%);
+  transform: translateY(-0.75rem);
+  color: #4c4948;
+}

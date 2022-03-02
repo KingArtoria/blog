@@ -1,4 +1,4 @@
-hhtml,
+html,
 body,
 div,
 ul,
@@ -20,9 +20,8 @@ textarea,
 th,
 td,
 select {
-  margin : 0;
+  margin: 0;
   padding: 0;
-  color  : #333;
 }
 
 * {
@@ -32,13 +31,15 @@ select {
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: "Microsoft YaHei";
-  font-size  : 14px;
-  color      : #333;
-  background : #f9f9f9;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+  color: #333;
+  background: #f9f9f9;
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default;
 }
 
 h1,
@@ -56,28 +57,28 @@ ol {
 }
 
 img {
-  border        : none;
+  border: none;
   vertical-align: middle;
 }
 
 a {
   text-decoration: none;
-  color          : #232323;
+  color: #232323;
 }
 
 table {
   border-collapse: collapse;
-  table-layout   : fixed;
+  table-layout: fixed;
 }
 
 input,
 textarea {
   outline: none;
-  border : none;
+  border: none;
 }
 
 textarea {
-  resize  : none;
+  resize: none;
   overflow: auto;
 }
 
@@ -86,24 +87,24 @@ textarea {
 }
 
 .clearfix:after {
-  content   : ".";
-  width     : 0;
-  height    : 0;
+  content: '.';
+  width: 0;
+  height: 0;
   visibility: hidden;
-  display   : block;
-  clear     : both;
-  overflow  : hidden;
+  display: block;
+  clear: both;
+  overflow: hidden;
 }
 
 /* 中心变形*/
 img {
-  transition        : all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   /* 过度 所有css属性 1秒过度 结束慢*/
-  -moz-transition   : all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
   /* Firefox 4 */
   -webkit-transition: all 0.5s ease-out;
   /* Safari 和 Chrome */
-  -o-transition     : all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   /* Opera */
 }
 
@@ -128,15 +129,15 @@ img {
 }
 
 .ellipse {
-  overflow     : hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
-  white-space  : nowrap;
+  white-space: nowrap;
 }
 
 .inline {
-  display : inline-block;
+  display: inline-block;
   *display: inline;
-  *zoom   : 1;
+  *zoom: 1;
 }
 
 input::-webkit-inner-spin-button {
@@ -146,8 +147,8 @@ input::-webkit-inner-spin-button {
 input::placeholder,
 input:-ms-input-placeholder,
 input::-ms-input-placeholder {
-  font-size  : 0.175rem;
+  font-size: 0.175rem;
   font-family: PingFang SC;
   font-weight: 400;
-  color      : #c6c6c6;
+  color: #c6c6c6;
 }

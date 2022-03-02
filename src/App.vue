@@ -10,5 +10,7 @@ export default {
 };
 </script>
 <style>
-@import './index.css';
+@import './css/index.css';
+@import './css/primitive.css';
+@import './css/animation.css';
 </style>

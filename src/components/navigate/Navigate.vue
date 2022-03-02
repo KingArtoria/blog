@@ -18,7 +18,6 @@ export default {
     /* 监听滚动条滚动 */ onscroll(e) {
       // * 获取距离顶部的距离
       let top = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(top);
       // * 判断向上滚动还是向下
       if (top > this.lastScrollDistance) {
         // * 像下滚动

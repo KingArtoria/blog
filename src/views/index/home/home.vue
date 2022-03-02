@@ -1,8 +1,16 @@
 <template>
-  <div class="home" id="home" style="transform: translateY(-1.5rem)">
+  <div class="home" id="home">
     <Navigate />
     <div class="home_content">
-      <div class="home_content_1" id="home_content_1"></div>
+      <div class="home_content_1" id="home_content_1">
+        <div class="home_content_1_1">
+          <div class="home_content_1_1_1">个人博客</div>
+          <div class="home_content_1_1_2">
+            <div class="home_content_1_1_2_1">{{ tagline }}</div>
+            <div class="home_content_1_1_2_2">|</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -14,11 +22,18 @@ export default {
     return {
       /* web宽度 */ webWidth: '',
       /* web高度 */ webHeight: '',
+      /* 标语 */ tagline: '醉后不知天在水，满船清梦压星河。',
     };
   },
   methods: {
-    /* 初始化view */ initView() {
-      document.getElementById('home').style.transform = 'translateY(0px)';
+    /* 生成标语 */ generateTagline() {
+      let stringArray = this.tagline.split('');
+      this.tagline = '';
+      stringArray.forEach((item, index) => {
+        setTimeout(() => {
+          this.tagline += item;
+        }, index * 300);
+      });
     },
     /* 监听web窗口变化 */ onresize() {
       window.onresize = () => {
@@ -37,8 +52,8 @@ export default {
     },
   },
   mounted() {
-    // * 初始化view
-    this.initView();
+    // * 生成标语
+    this.generateTagline();
     // * 监听web窗口变化
     this.onresize();
     // * 获取web可视化宽高

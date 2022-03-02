@@ -1,10 +1,37 @@
 .home {
-  height: 1100px;
   transition: all 0.5s;
   .home_content {
     .home_content_1 {
       background: url('https://www.人活着就是为了麻衣学姐.com/repository/background.png') center center / cover no-repeat;
       background-size: 100%;
+      display: flex;
+      align-items: center;
+      .home_content_1_1 {
+        width: 100%;
+        .home_content_1_1_1 {
+          text-align: center;
+          font-size: 0.5rem;
+          color: #eee;
+          font-weight: bold;
+        }
+        .home_content_1_1_2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .home_content_1_1_2_1 {
+            text-align: center;
+            font-size: 0.3rem;
+            color: #eee;
+            line-height: 1.5;
+          }
+          .home_content_1_1_2_2 {
+            text-align: center;
+            font-size: 0.3rem;
+            color: #eee;
+            line-height: 1.5;
+          }
+        }
+      }
     }
   }
 }

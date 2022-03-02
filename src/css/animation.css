@@ -1,0 +1,42 @@
+@keyframes loading {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes cursor {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body {
+  animation-name: loading;
+  animation-duration: 1.5s;
+}
+.home_content_1_1_2_2 {
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.home_content_1_1_1 {
+  animation-name: enlarge;
+  animation-duration: 1.5s;
+}

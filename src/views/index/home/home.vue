@@ -10,6 +10,7 @@
             <div class="home_content_1_1_2_2">|</div>
           </div>
         </div>
+        <img src="https://www.人活着就是为了麻衣学姐.com/pic/xx.png" class="home_content_1_2" />
       </div>
     </div>
   </div>
@@ -27,10 +28,15 @@ export default {
   },
   methods: {
     /* 生成标语 */ generateTagline() {
+      // ? 字符串分割数组
       let stringArray = this.tagline.split('');
+      // ? 页面展示的字符串赋值完成后清空
       this.tagline = '';
+      // ? 循环处理
       stringArray.forEach((item, index) => {
+        // ? 每次延迟X*300ms
         setTimeout(() => {
+          //? 页面展示的字符串每次拼接
           this.tagline += item;
         }, index * 300);
       });

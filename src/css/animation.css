@@ -27,6 +27,23 @@
     transform: scale(1);
   }
 }
+@keyframes beat {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    bottom: 0.4rem;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.2;
+    bottom: 0.2rem;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    bottom: 0.4rem;
+  }
+}
 body {
   animation-name: loading;
   animation-duration: 1.5s;
@@ -39,4 +56,9 @@ body {
 .home_content_1_1_1 {
   animation-name: enlarge;
   animation-duration: 1.5s;
+}
+.home_content_1_2 {
+  animation-name: beat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

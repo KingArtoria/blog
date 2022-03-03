@@ -1,6 +1,7 @@
 .home {
   transition: all 0.5s;
   background: linear-gradient(90deg, rgba(247, 149, 51, 0.1) 0, rgba(243, 112, 85, 0.1) 15%, rgba(239, 78, 123, 0.1) 30%, rgba(161, 102, 171, 0.1) 44%, rgba(80, 115, 184, 0.1) 58%, rgba(16, 152, 173, 0.1) 72%, rgba(7, 179, 155, 0.1) 86%, rgba(109, 186, 130, 0.1) 100%);
+  padding-bottom: 0.45rem;
   .home_content {
     .home_content_1 {
       background: url('https://www.人活着就是为了麻衣学姐.com/pic/background.png') center center / cover no-repeat;
@@ -41,6 +42,95 @@
         width: 0.2rem;
         height: 0.2rem;
         cursor: pointer;
+      }
+    }
+    .home_content_2 {
+      display: flex;
+      margin-top: 0.5rem;
+      justify-content: center;
+      .home_content_2_1 {
+        margin-right: 0.1rem;
+        .home_content_2_1_1 {
+          width: 10.95rem;
+          background: #fff;
+          border-radius: 0.1rem;
+          box-shadow: 0 0.05rem 0.1rem 0.075rem rgb(7 17 27 / 6%);
+          padding: 0.125rem 0.2rem;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          transition: all 0.5s;
+          .home_content_2_1_1_1 {
+            width: 0.25rem;
+            height: 0.25rem;
+          }
+          .home_content_2_1_1_2 {
+            height: 25px;
+            overflow: hidden;
+            .home_content_2_1_1_2_1 {
+              font-size: 0.1875rem;
+              color: #4c4948;
+              line-height: 25px;
+              cursor: pointer;
+              transition: all 0.5s;
+            }
+            .home_content_2_1_1_2_1:hover {
+              color: rgb(157, 40, 241);
+            }
+          }
+          .home_content_2_1_1_3 {
+            width: 0.2rem;
+            height: 0.2rem;
+          }
+        }
+        .home_content_2_1_1:hover {
+          box-shadow: 0 0.05rem 0.15rem 0.15rem rgb(7 17 27 / 15%);
+        }
+      }
+      .home_content_2_2 {
+        margin-left: 0.1rem;
+        .home_content_2_2_1 {
+          background: #fff;
+          border-radius: 0.1rem;
+          padding: 0.25rem 0.3rem;
+          width: 3.525rem;
+          box-shadow: 0 0.05rem 0.1rem 0.075rem rgb(7 17 27 / 6%);
+          transition: all 0.5s;
+          .home_content_2_2_1_1 {
+            height: 1.375rem;
+            width: 1.375rem;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .home_content_2_2_1_1_1 {
+              height: 1.375rem;
+              width: 1.375rem;
+              transition: all 0.5s;
+            }
+            .home_content_2_2_1_1_1:hover {
+              transform: rotate(360deg);
+            }
+          }
+          .home_content_2_2_1_2 {
+            font-size: 0.275rem;
+            margin-top: 0.125rem;
+            text-align: center;
+            color: #4c4948;
+            line-height: 1.5;
+          }
+          .home_content_2_2_1_3 {
+            font-size: 0.175rem;
+            text-align: center;
+            color: #4c4948;
+          }
+        }
+        .home_content_2_2_1:hover {
+          box-shadow: 0 0.05rem 0.15rem 0.15rem rgb(7 17 27 / 15%);
+        }
       }
     }
   }

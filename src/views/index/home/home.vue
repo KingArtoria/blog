@@ -12,6 +12,28 @@
         </div>
         <img src="https://www.人活着就是为了麻衣学姐.com/pic/xx.png" class="home_content_1_2" />
       </div>
+      <div class="home_content_2">
+        <div class="home_content_2_1">
+          <div class="home_content_2_1_1">
+            <img src="https://www.人活着就是为了麻衣学姐.com/pic/xinxi.png" class="home_content_2_1_1_1" />
+            <div class="home_content_2_1_1_2">
+              <div class="home_content_2_1_1_2_1" :style="`transform: translateY(${sayTranslateY}px);transition: all ${sayTime}s;`">
+                <div class="home_content_2_1_1_2_1_1" v-for="(item, index) in say" :key="index">{{ item }}</div>
+              </div>
+            </div>
+            <img src="https://www.人活着就是为了麻衣学姐.com/pic/yjt.png" class="home_content_2_1_1_3" />
+          </div>
+        </div>
+        <div class="home_content_2_2">
+          <div class="home_content_2_2_1">
+            <div class="home_content_2_2_1_1">
+              <img src="https://www.人活着就是为了麻衣学姐.com/pic/tx.png" class="home_content_2_2_1_1_1" />
+            </div>
+            <div class="home_content_2_2_1_2">获月Thirty</div>
+            <div class="home_content_2_2_1_3">小心二次元🍇</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -24,9 +46,35 @@ export default {
       /* web宽度 */ webWidth: '',
       /* web高度 */ webHeight: '',
       /* 标语 */ tagline: '醉后不知天在水，满船清梦压星河。',
+      /* 说说 */ say: ['风将一纸情书寄给了我🎏', '每一颗眼泪是一万道光🎇'],
+      /* 说说Y偏移值 */ sayTranslateY: 0,
+      /* 说说效果延迟时间 */ sayTime: 0.5,
     };
   },
   methods: {
+    /* 滚动说说 */ scrollSay() {
+      // ? 数组累加成两份
+      this.say = this.say.concat(this.say);
+      // ? 复制总偏移高度
+      let countHeight = this.say.length * 25;
+      // ? 每过1500ms检查一次当前位置
+      setInterval(() => {
+        // ? 如果当前Y位置==总高度的一半
+        if (this.sayTranslateY == -(countHeight / 2)) {
+          // ? 动画时间=0
+          this.sayTime = 0;
+          // ? Y轴恢复0
+          this.sayTranslateY = 0;
+        }
+      }, 1500);
+      // ? 每过3000ms执行一次偏移
+      setInterval(() => {
+        // ? 复制动画时间
+        this.sayTime = 0.5;
+        // ? 复制Y轴偏移
+        this.sayTranslateY -= 25;
+      }, 3000);
+    },
     /* 生成标语 */ generateTagline() {
       // ? 字符串分割数组
       let stringArray = this.tagline.split('');
@@ -58,6 +106,8 @@ export default {
     },
   },
   mounted() {
+    // * 滚动说说
+    this.scrollSay();
     // * 生成标语
     this.generateTagline();
     // * 监听web窗口变化

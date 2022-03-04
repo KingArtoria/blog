@@ -2,6 +2,7 @@
   transition: all 0.5s;
   background: linear-gradient(90deg, rgba(247, 149, 51, 0.1) 0, rgba(243, 112, 85, 0.1) 15%, rgba(239, 78, 123, 0.1) 30%, rgba(161, 102, 171, 0.1) 44%, rgba(80, 115, 184, 0.1) 58%, rgba(16, 152, 173, 0.1) 72%, rgba(7, 179, 155, 0.1) 86%, rgba(109, 186, 130, 0.1) 100%);
   padding-bottom: 0.45rem;
+  height: 3000px;
   .home_content {
     .home_content_1 {
       background: url('https://www.人活着就是为了麻衣学姐.com/pic/background.png') center center / cover no-repeat;
@@ -55,21 +56,21 @@
           background: #fff;
           border-radius: 0.1rem;
           box-shadow: 0 0.05rem 0.1rem 0.075rem rgb(7 17 27 / 6%);
-          padding: 0.125rem 0.2rem;
+          padding: 10px 16px;
           overflow: hidden;
           display: flex;
           align-items: center;
           justify-content: space-between;
           transition: all 0.5s;
           .home_content_2_1_1_1 {
-            width: 0.25rem;
-            height: 0.25rem;
+            width: 20px;
+            height: 20px;
           }
           .home_content_2_1_1_2 {
             height: 25px;
             overflow: hidden;
             .home_content_2_1_1_2_1 {
-              font-size: 0.1875rem;
+              font-size: 15px;
               color: #4c4948;
               line-height: 25px;
               cursor: pointer;
@@ -80,12 +81,83 @@
             }
           }
           .home_content_2_1_1_3 {
-            width: 0.2rem;
-            height: 0.2rem;
+            width: 16px;
+            height: 16px;
           }
         }
         .home_content_2_1_1:hover {
           box-shadow: 0 0.05rem 0.15rem 0.15rem rgb(7 17 27 / 15%);
+        }
+        .home_content_2_1_2 {
+          .home_content_2_1_2_1 {
+            border-radius: 0.15rem 0.1rem 0.1rem 0.15rem;
+            margin-top: 0.25rem;
+            height: 3.5rem;
+            box-shadow: 0 0.05rem 0.1rem 0.075rem rgb(7 17 27 / 6%);
+            background: #fff;
+            transition: all 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 10.95rem;
+            .home_content_2_1_2_1_1 {
+              width: 4.925rem;
+              height: 3.5rem;
+              overflow: hidden;
+              border-radius: 0.1rem 0 0 0.1rem;
+              .home_content_2_1_2_1_1_1 {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transform: scale(1);
+              }
+              .home_content_2_1_2_1_1_1:hover {
+                transform: scale(1.2);
+              }
+            }
+            .home_content_2_1_2_1_2 {
+              width: calc(100% - 4.925rem);
+              padding: 0 0.5rem;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              .home_content_2_1_2_1_2_1 {
+                width: 100%;
+                font-size: 0.3rem;
+                color: #4c4948;
+              }
+              .home_content_2_1_2_1_2_2 {
+                margin: 0.075rem 0;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .home_content_2_1_2_1_2_2_1 {
+                  width: 0.175rem;
+                  height: 0.175rem;
+                  margin-right: 0.0625rem;
+                }
+                .home_content_2_1_2_1_2_2_2 {
+                  font-size: 0.15rem;
+                  color: #858585;
+                }
+              }
+              .home_content_2_1_2_1_2_3 {
+                font-size: 0.175rem;
+                color: #4c4948;
+                line-height: 2;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+              }
+            }
+          }
+          .home_content_2_1_2_1:hover {
+            box-shadow: 0 0.05rem 0.15rem 0.15rem rgb(7 17 27 / 15%);
+          }
         }
       }
       .home_content_2_2 {

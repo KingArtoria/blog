@@ -10,7 +10,7 @@
             <div class="home_content_1_1_2_2">|</div>
           </div>
         </div>
-        <img src="https://www.人活着就是为了麻衣学姐.com/pic/xx.png" class="home_content_1_2" />
+        <img src="https://www.人活着就是为了麻衣学姐.com/pic/xx.png" class="home_content_1_2" @click="scrollNext" />
       </div>
       <div class="home_content_2">
         <div class="home_content_2_1">
@@ -22,6 +22,21 @@
               </div>
             </div>
             <img src="https://www.人活着就是为了麻衣学姐.com/pic/yjt.png" class="home_content_2_1_1_3" />
+          </div>
+          <div class="home_content_2_1_2">
+            <div class="home_content_2_1_2_1">
+              <div class="home_content_2_1_2_1_1">
+                <img src="https://www.人活着就是为了麻衣学姐.com/pic/wz.png" class="home_content_2_1_2_1_1_1" />
+              </div>
+              <div class="home_content_2_1_2_1_2">
+                <div class="home_content_2_1_2_1_2_1">标题</div>
+                <div class="home_content_2_1_2_1_2_2">
+                  <img src="https://www.人活着就是为了麻衣学姐.com/pic/rq.png" class="home_content_2_1_2_1_2_2_1" />
+                  <div class="home_content_2_1_2_1_2_2_2">2022-03-04</div>
+                </div>
+                <div class="home_content_2_1_2_1_2_3">这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容这个是一个文章内容</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="home_content_2_2">
@@ -52,6 +67,22 @@ export default {
     };
   },
   methods: {
+    /* 滚动至下一项 */ scrollNext() {
+      // ? 获取背景高度的1/15
+      let webHeightNum = this.webHeight / 300;
+      // ? 每次滚动的距离
+      let distance = 0;
+      // ? 执行15次
+      let heightInterval = setInterval(() => {
+        // ? 累加每次滚动的距离
+        distance += webHeightNum;
+        window.scrollTo(0, distance);
+      }, 5);
+      // ? 1500ms后结束
+      setTimeout(() => {
+        clearInterval(heightInterval);
+      }, 1515);
+    },
     /* 滚动说说 */ scrollSay() {
       // ? 数组累加成两份
       this.say = this.say.concat(this.say);

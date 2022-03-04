@@ -55,7 +55,8 @@ body {
 }
 .home_content_1_1_1,
 .home_content_2_2_1,
-.home_content_2_1_1 {
+.home_content_2_1_1,
+.home_content_2_1_2_1 {
   animation-name: enlarge;
   animation-duration: 1.5s;
 }
